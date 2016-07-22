@@ -56,16 +56,17 @@
 區塊內容
 ```
 
-````
-語法：用三個或四反單引號把內容包起來
+```
+語法：用三個反單引號把內容包起來
 
-　　　```  
-　　　區塊內容
-　　　```
-````
+　　　`` `  
+　　　區塊內容  
+　　　`` `  
+
+　　　P.S. 三個反單引號間不需要空格，暫時放上是為了讓三個單引號正常出現
+```
 
 註一：如果要在區塊中插入三個反單引號可以使用四個反單引號包住內容  
-註二：使用四個反單引號的時候在 Atom 上顯示是正常的，不過轉換成 HTML 後會有問題（會變成四個反單引號，而不是 code 標籤
 
 
 # 階層
@@ -206,13 +207,15 @@ def hello_world():
     print('Hello World')
 ```
 
-````
+```
 語法：寫法像是大區塊，利用三個反單引號將程式碼包起來，在開頭的三個反單引號後加上語言名稱
 
-　　　```語言名稱
+　　　`` `語言名稱
 　　　程式碼.......
-　　　```
-````
+　　　`` `
+
+　　　P.S. 三個反單引號間不需要空格，暫時放上是為了讓三個單引號正常出現
+```
 
 註：Markdown 支援的語言可以參考 *[Syntax highlighting in markdown](http://support.codebasehq.com/articles/tips-tricks/syntax-highlighting-in-markdown)*
 
@@ -229,7 +232,7 @@ def hello_world():
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6A5EpqqDOdk" frameborder="0" allowfullscreen></iframe>
 
 <br>
-語法：直接使用 HTML 語法
+語法：`直接使用 HTML 語法`
 
 
 # HTML 語法
