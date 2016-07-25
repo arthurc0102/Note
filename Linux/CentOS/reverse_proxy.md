@@ -53,11 +53,22 @@
 >     }
 > }
 > ```
-> 註：如果需要做 Virtual Host 將整段重新寫一次即可
+> 註：如果需要做 Virtual Host 將整段重新寫一次即可，或是可以另外新增設定檔  
+> 　　Ex. `example.com.conf`
 >
 > 重新啟動 nginx：`systemctl restart nginx`
 > <center><h2>恭喜完成！</h2></center>
 
+
+## 代解決問題
+
+> 問題一
+>> | 使用者 | <--> | 反向代理伺服器 | <--> | 網頁伺服器 |
+>> | :---: | :---: | :---: | :---: | :---: |
+>> | PC | <--> | reverse proxy | <--> | Server 1 |
+>> | | | | <--> | Server 2 |
+>>
+>> 描述：`當被推到後面的 Server（Server 1 和 Server 2），使用的 port 號，不是 80 的時候會發生 502 錯誤`
 
 ## 參考資料來源
 
