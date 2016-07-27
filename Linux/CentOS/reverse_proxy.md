@@ -53,8 +53,10 @@
 >     }
 > }
 > ```
-> 註：如果需要做 Virtual Host 將整段重新寫一次即可，或是可以另外新增設定檔  
-> 　　Ex. `example.com.conf`
+> 註一：如果需要做 Virtual Host 將整段重新寫一次即可，或是可以另外新增設定檔  
+> 　　　Ex. `example.com.conf`  
+> 註二：如果在 `proxy_pass` 這個設定中需要指定資料夾，需要在後面加上 `/`  
+> 　　　Ex. `http://192.168.0.10:3000/user/`
 >
 > 重新啟動 nginx：`systemctl restart nginx`
 > <center><h2>恭喜完成！</h2></center>
