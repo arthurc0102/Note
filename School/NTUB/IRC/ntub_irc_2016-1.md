@@ -725,6 +725,54 @@
   ```
 
 
+## Git
+
+  * [什麼是 Git ？](https://zh.wikipedia.org/wiki/Git)
+
+  * 環境設定（這個部份引用 [Denny 的 git 教材](http://denny.one/SITCON-Workshop-2015-Apr-git/#1)）
+
+    * 設定使用者電子郵件：`git config --global user.email "you@example.com"`
+
+    * 設定使用者名稱：`git config --global user.name "Your Name"`
+
+    * 設定顯示顏色（方便檢視）：`git config --global color.ui true`
+
+    * 設定 lg 指定（美觀的 log 輸出）：`git config --global alias.lg "log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"`
+
+  * 基本指令
+
+    * 開始：`git init`
+
+      > 在這個目錄當中開始 git 版本控制
+
+    * 建立快照：`git add <檔案名稱>`
+
+      > 為檔案建立快照
+
+    * 建立版本：`git commit -m "<關於此版本的描述文字>"`
+
+      > 將已建立快照的檔案寫入版本控制中
+
+    * 看版本：`git log`
+
+      > 看目前所有的版本
+
+    * 推到遠端：`git push`
+
+      > 將本地做的版本控制同步到遠端
+
+    * 拉到本地：`git pull`
+
+      > 將遠端的版本控制拉到本地端
+
+    * 複製到本地：`git clone [url]`
+
+      > 將其他人的專案複製（~~偷~~）到你的電腦中
+
+    * 回到過去：`git checkout [版本]`
+
+      > 跳到特定版本
+
 ## 個人資料
 
 > 嗨，我是拉布  
