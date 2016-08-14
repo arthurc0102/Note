@@ -552,34 +552,176 @@
 
 ### 基本語法
 
-1. if
+0. 輸出語法
   ```js
-  if (true) {
+  console.log('Hello World');  // Hello World
 
-  }
+  /*
+   * console.log(要輸出的東西);
+   */
   ```
 
-2. for
+1. 選擇語法：`if`
   ```js
-  for (var i = 0; i < array.length; i++) {
-    array[i]
+  var a = 10;
+
+  if (a < 10) {
+    console.log('here is if');
+  } else if (a < 0) {
+    console.log('here is else if');
+  } else {
+    console.log('here is else');
   }
+
+  // 執行結果：here is else
+
+  /*
+   * if (第一個條件) {
+   *   符合第一個條件執行這裡
+   * } else if (第一個條件) {
+   *   符合第一個條件執行這裡
+   * } else {
+   *   其他情況執行這邊
+   * }
+   */
   ```
 
-3. while
+2. 迴圈（一）：`for`
   ```js
-  while (true) {
-
+  for (var i = 0; i < 10; i++) {
+    console.log(i);
   }
+
+  /*
+   * 執行結果
+   *
+   * 0
+   * 1
+   * 2
+   * 3
+   * 4
+   * 5
+   * 6
+   * 7
+   * 8
+   * 9
+   */
+
+   /*
+    * for (宣告變數初始值; 設定條件（符合則執行）; 設定變數變化（遞增）) {
+    *   執行區塊
+    * }
+    */
   ```
 
-4. for each
+3. 迴圈（二）：`while`
   ```js
-  for (var variable in object) {
+  var i = 0;
 
+  while (i < 10) {
+    console.log(i);
+    i++;
   }
+
+  /*
+   * 執行結果
+   *
+   * 0
+   * 1
+   * 2
+   * 3
+   * 4
+   * 5
+   * 6
+   * 7
+   * 8
+   * 9
+   */
+
+   /*
+    * while (設定條件（符合則執行）) {
+    *   執行區塊
+    * }
+    */
   ```
 
+4. 迴圈（三）:`for each`
+
+  > 用來瀏覽所有物件中的元素
+
+  ```js
+  var object = {
+    'a' : 1,
+    'b' : 2,
+    'c' : 3
+  }
+
+  for (var item in object) {
+    console.log(item + ' - ' + object[item]);
+  }
+
+  /*
+   * 執行結果
+   *
+   * a - 1
+   * b - 2
+   * c - 3
+   */
+
+   /*
+    * for (宣告變數存放物件中的鍵值（key）) {
+    *   執行區塊
+    * }
+    */
+  ```
+
+5. 迴圈（其他）：`break 與 continue`
+
+  > continue 會跳過本次迴圈進入下一次
+
+  ```js
+  for (var i = 0; i < 10; i++) {
+    if (i == 3) {
+      continue
+    }
+
+    console.log(i);
+  }
+
+  /*
+   * 執行結果
+   *
+   * 0
+   * 1
+   * 2
+   * 4
+   * 5
+   * 6
+   * 7
+   * 8
+   * 9
+   */
+  ```
+
+  > break 會直接跳出迴圈
+
+  ```js
+  for (var i = 0; i < 10; i++) {
+    if (i == 3) {
+      break;
+    }
+
+    console.log(i);
+  }
+
+  /*
+   * 執行結果
+   *
+   * 0
+   * 1
+   * 2
+   */
+  ```
 
 ## 個人資料
 
