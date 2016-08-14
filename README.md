@@ -4,11 +4,17 @@
 
 ## 目錄
 
-> Note
+> [Note](./)
 >> [Linux](./Linux)
->> Markdown
->> School
->>> NTUB
->>>> IRC
->>>>> [ntub_irc_2016-1.md](./School/NTUB/IRC/ntub_irc_2016-1.md)
+>>> [CentOS](./Linux/CentOS)
+>>>> [反向代理伺服器](./Linux/CentOS/reverse_proxy.md)
+
+>> [Markdown](./Markdown)
+>>> [Markdown 練習](./Markdown/markdown.md)
+
+>> [School](./School)
+>>> [NTUB](./School/NTUB)
+>>>> [IRC](./School/NTUB/IRC)
+>>>>> [北商資研社 2016 暑訓講義 - 1](./School/NTUB/IRC/ntub_irc_2016-1.md)
+
 >> [README.md](./README.md)
