@@ -218,11 +218,11 @@ def hello_world():
 註：Markdown 支援的語言可以參考 *[Syntax highlighting in markdown](http://support.codebasehq.com/articles/tips-tricks/syntax-highlighting-in-markdown)*
 
 
-<!-- # 圖片
+# 圖片
 
 ![Markdown](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/208px-Markdown-mark.svg.png)
 
-語法：`![圖片描述](圖片連結)` -->
+語法：`![圖片描述](圖片連結)`
 
 
 # 影片
