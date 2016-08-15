@@ -729,7 +729,7 @@
 
   * [什麼是 Git ？](https://zh.wikipedia.org/wiki/Git)
 
-  * 環境設定（這個部份引用 [Denny 的 git 教材](http://denny.one/SITCON-Workshop-2015-Apr-git/#1)）
+  * 環境設定（環境設定這部份引用自 [Denny 的 git 教材](http://denny.one/SITCON-Workshop-2015-Apr-git/#1)）
 
     * 設定使用者電子郵件：`git config --global user.email "you@example.com"`
 
