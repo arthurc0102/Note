@@ -1,9 +1,10 @@
 # 講義 for 北商資研社 2016 電腦暑期營
 
-> 第一份  
-> 基礎 Javascript 與基本 Git
+> 第一份講義 - 基礎 Javascript 與基本 Git
 >
 > Javascript 與 Git 絕對不只有這樣，因課程關係只準備這些，如果有興趣網路上有很多教學～
+>
+> 上課用[投影片](http://slides.com/arthurc0102/ntub-irc-2016-1#/)（其實只有自我介紹而已 XD）
 
 
 ## Javascript
