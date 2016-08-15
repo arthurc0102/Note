@@ -785,3 +785,5 @@
 > 我的電子郵件：arthurc.iphone@gmail.com  
 >
 > 如果這份講義有錯誤或是有任何問題歡迎跟我說，感恩。
+
+<img src="./image/by-sa.png" alt="CC BY-SA" width="100" height="35"/>
