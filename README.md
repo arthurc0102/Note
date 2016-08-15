@@ -15,8 +15,8 @@ Note
 > [School](./School)
 >> [NTUB](./School/NTUB)
 >>> [IRC](./School/NTUB/IRC)
->>>> [講義用圖片](./School/NTUB/IRC)
->>>>> [CC BY-SA 圖片](./School/NTUB/IRC/by-sa.png)
+>>>> [講義用圖片](./School/NTUB/IRC/image)
+>>>>> [CC BY-SA](./School/NTUB/IRC/image/by-sa.png)
 
 >>>> [北商資研社 2016 暑訓講義 - 1](./School/NTUB/IRC/ntub_irc_2016-1.md)
 
