@@ -5,4 +5,4 @@
 ## 目錄
 
 Windows
-> [set-dns](./set-dns.me) - 設定 dns 的指令
+> [set-dns](./set-dns.md) - 設定 dns 的指令
