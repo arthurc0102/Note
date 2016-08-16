@@ -5,8 +5,10 @@
 ## 目錄
 
 Note
-> [Linux 設定或是伺服器架設筆記](./Linux)
+> [Linux](./Linux) - Linux 設定或是伺服器架設筆記
 
-> [Markdown 練習筆記](./Markdown)
+> [Markdown](./Markdown) - Markdown 練習筆記
 
-> [學校或是社團相關](./School)
+> [School](./School) - 學校或是社團相關
+
+> [Windows](.Windows) - Winsdows 設定
