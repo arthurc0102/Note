@@ -1,23 +1,12 @@
 # 個人筆記
 
-> 平時使用一些功能所作的隨手整理
+> 平時使用一些功能或是上課所作的隨手整理
 
 ## 目錄
 
 Note
-> [Linux](./Linux)
->> [CentOS](./Linux/CentOS)
->>> [反向代理伺服器](./Linux/CentOS/reverse_proxy.md)
+> [Linux 設定或是伺服器架設筆記](./Linux)
 
-> [Markdown](./Markdown)
->> [Markdown 練習](./Markdown/markdown.md)
+> [Markdown 練習筆記](./Markdown)
 
-> [School](./School)
->> [NTUB](./School/NTUB)
->>> [IRC](./School/NTUB/IRC)
->>>> [講義用圖片](./School/NTUB/IRC/image)
->>>>> [CC BY-SA](./School/NTUB/IRC/image/by-sa.png)
-
->>>> [北商資研社 2016 暑訓講義 - 1](./School/NTUB/IRC/ntub_irc_2016-1.md)
-
-> [README.md](./README.md)
+> [學校或是社團相關](./School)
