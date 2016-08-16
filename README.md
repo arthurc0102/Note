@@ -11,4 +11,4 @@ Note
 
 > [School](./School) - 學校或是社團相關
 
-> [Windows](.Windows) - Winsdows 設定
+> [Windows](./Windows) - Winsdows 設定
