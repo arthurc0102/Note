@@ -23,6 +23,15 @@
 
 ### 分割磁碟
 
+$gdisk /dev/sda
+
+sda1
+size:512mb
+type:ef00
+
+sda2
+szie:all
+type:8E00
 
 ### 格式化硬碟
 
