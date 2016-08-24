@@ -6,3 +6,5 @@
 
 Linux
 > [CentOS](./CentOS) - CentOS 相關的筆記
+
+> [Arch](./arch) - ArchLinux 相關的筆記

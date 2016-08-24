@@ -35,6 +35,13 @@ type:8E00
 
 ### 格式化硬碟
 
+$mkfs.vfat -F32 /dev/sda1
+#efi的空間要用fat32作格式化
+
+$mkfs.ext4 /dev/mapper/vgroup-root
+$mkfs.ext4 /dev/mapper/vgroup-root
+#用ext4格式化vgroup-root與vgroup-home,因為是ssd所以用discard參數
+
 
 ### 設定 mirrorlist
 
