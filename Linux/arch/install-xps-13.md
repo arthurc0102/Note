@@ -24,24 +24,33 @@
 
 ### 分割磁碟
 
+* 看磁碟：`lsblk`
+
+* gdisk
+  * `p` 看目前現有分割
+  * `n` 新增分割
+  * `w` 寫入分割設定
+
 * 選擇硬碟：`gdisk /dev/nvme0n1`
   1. nvme0n1p1
-    * size : 512mb  
+    * size : 512mb
     * type : ef00
 
   2. nvme0n1p2
-    * szie : all  
+    * szie : all
     * type : 8E00
 
 
 ### 格式化硬碟
 
-* efi 的空間要用 fat32 作格式化：`mkfs.vfat -F32/dev/nvme0n1p1`
+* efi 的空間要用 fat32 作格式化：`mkfs.vfat -F32 /dev/nvme0n1p1`
 
 * 其他的空間要用 ext4 作格式化：`mkfs.ext4 /dev/nvme0n1p2`
 
 
 ### 設定 mirrorlist
+
+* 檔案位置 `/etc/pacman.d/mirrorlist`
 
 * 找到 `##Taiwan` 下面的網址就把他放到最上面修改後檔案的開頭
 
@@ -73,7 +82,7 @@
 
 * 載入 EFI 模組：`modprobe efivarfs`
 
-* 已 `/mnt` 當作 `/` ：`arch-chroot /mnt`
+* 以 `/mnt` 當作 `/` ：`arch-chroot /mnt`
 
 * 修改 root 的密碼：`passwd`
 
@@ -92,8 +101,8 @@
   * 取消註解這些語系
   ```
   en_US.UTF-8 UTF-8
-  zh_TW.UTF-8 UTF-8  
-  zh_TW BIG5  
+  zh_TW.UTF-8 UTF-8
+  zh_TW BIG5
   ```
 
   * 套用設定：`locale-gen`
@@ -102,10 +111,10 @@
 
   * 因為硬碟的關係 grub 不能用，我們改用 bootctl
 
-  * 安裝：`bootctl --path=/boot/efi$esp install`
+  * 安裝：`bootctl --path=/boot$esp install`
 
   * 設定：
-    1. 檔案：`/boot/efi/loader/loader.conf`
+    1. 檔案：`/boot/loader/loader.conf`
        ```
        default arch
        timeout 3
@@ -114,8 +123,8 @@
 
     2. 取得 UUID ：`blkid -s PARTUUID -o value /dev/nvme0n1p2`
 
-    3. 檔案：`/boot/efi/loader/entries/arch.conf`
-       ```      
+    3. 檔案：`/boot/loader/entries/arch.conf`
+       ```
        title   Arch Linux
        linux   /vmlinuz-linux
        initrd  /initramfs-linux.img
@@ -155,6 +164,8 @@
 
       > 依照提示補足缺少的套件
 
+    * 指令：`mkinitcpio`
+
     * 離開 change root 模式：`exit`
 
     * 把掛載到 /mnt 的硬碟解除掛載：`umount -R /mnt`
@@ -167,6 +178,18 @@
 ### 系統設定
 
 * 網路：同上
+
+* 設定 pacman
+
+  * 檔案：`etc/pacman.conf`
+
+  * 取消註解
+    ```
+    ...
+    [multilib]
+    Include = /etc/pacman.d/mirrorlist
+    ...
+    ```
 
 * 使用者：
 
@@ -197,9 +220,11 @@
 
 * 安裝字體：`pacman -S ttf-dejavu wqy-zenhei`
 
-* 安裝 gnome：`pacman -S gdm`
+* 安裝 gnome：`pacman -S gnome`
 
   > 開機啟動 gdm：`systemctl enable gdm`
+
+* 安裝 gnome 設定工具：`pacman -S gnome-tweak-tool`
 
 * 安裝中文輸入法：`pacman -S ibus-chewing`
 
@@ -209,7 +234,7 @@
   touch /home/user/.zshrc
   ```
 
-* 安裝其他軟體：`pacman -S chromium vim rdesktop conky openssh guake`
+* 安裝其他軟體：`pacman -S chromium vim rdesktop conky openssh guake firefix-il8n-zh-tw p7zip zip file-roller tree`
 
 * gnome-terminal 如果不能使用：`# localectl set-locale LANG="en_US.UTF-8"`
 
