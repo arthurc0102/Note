@@ -152,12 +152,16 @@
 
       * 安裝 7-zip：`pacman -S p7zip`
 
-      * 設定：  
-        ```  
+      * 安裝 bluez-utils：`pacman -S bluez-utils`
+
+        > for hex2hcd
+
+      * 設定：
+        ```
         7z x 9350_Network_Driver_XMJK7_WN32_12.0.1.720_A00.EXE
         cp Win32/BCM4350C5_003.006.007.0095.1703.hex ./
         hex2hcd BCM4350C5_003.006.007.0095.1703.hex
-        mv BCM4350C5_003.006.007.0095.1703.hcd /lib/firmware/brcm/BCM-0a5c-6412.hcd  
+        mv BCM4350C5_003.006.007.0095.1703.hcd /lib/firmware/brcm/BCM-0a5c-6412.hcd
         ```
 
     * 安裝 wifi-menu 缺少的套件：`wifi-menu`
@@ -234,7 +238,7 @@
   touch /home/user/.zshrc
   ```
 
-* 安裝其他軟體：`pacman -S chromium vim rdesktop conky openssh guake firefix-i18n-zh-tw p7zip zip file-roller tree ipython git filezilla`
+* 安裝其他軟體：`pacman -S chromium vim rdesktop conky openssh guake firefix-i18n-zh-tw p7zip zip file-roller tree ipython git filezilla markdown`
 
 * gnome-terminal 如果不能使用：`localectl set-locale LANG="en_US.UTF-8"`
 
