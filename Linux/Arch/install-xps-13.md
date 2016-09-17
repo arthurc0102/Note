@@ -72,8 +72,8 @@
 * 掛載：
   ```
   mount /dev/nvme0n1p2 /mnt
-  mkdir -p /mnt/boot/efi
-  mount /dev/nvme0n1p1 /mnt/boot/efi
+  mkdir /mnt/boot
+  mount /dev/nvme0n1p1 /mnt/boot
   ```
 
 * 安裝：`pacstrap /mnt base base-devel`
@@ -86,7 +86,7 @@
 
 * 修改 root 的密碼：`passwd`
 
-* 設定 hostname：`echo "xps13">>/etc/hostname`
+* 設定 hostname：`echo "xps13" >> /etc/hostname`
 
 * 設定時間
   ```
@@ -152,13 +152,13 @@
 
       * 安裝 7-zip：`pacman -S p7zip`
 
-      * 設定：
-        ‵‵‵
+      * 設定：  
+        ```  
         7z x 9350_Network_Driver_XMJK7_WN32_12.0.1.720_A00.EXE
         cp Win32/BCM4350C5_003.006.007.0095.1703.hex ./
         hex2hcd BCM4350C5_003.006.007.0095.1703.hex
-        mv BCM4350C5_003.006.007.0095.1703.hcd /lib/firmware/brcm/BCM-0a5c-6412.hcd
-        ‵‵‵
+        mv BCM4350C5_003.006.007.0095.1703.hcd /lib/firmware/brcm/BCM-0a5c-6412.hcd  
+        ```
 
     * 安裝 wifi-menu 缺少的套件：`wifi-menu`
 
@@ -234,11 +234,11 @@
   touch /home/user/.zshrc
   ```
 
-* 安裝其他軟體：`pacman -S chromium vim rdesktop conky openssh guake firefix-il8n-zh-tw p7zip zip file-roller tree ipython`
+* 安裝其他軟體：`pacman -S chromium vim rdesktop conky openssh guake firefix-i18n-zh-tw p7zip zip file-roller tree ipython git filezilla`
 
-* gnome-terminal 如果不能使用：`# localectl set-locale LANG="en_US.UTF-8"`
+* gnome-terminal 如果不能使用：`localectl set-locale LANG="en_US.UTF-8"`
 
-* 安裝讀寫 ntfs 與 exfat 的軟體：`pacman -S tfs-3g exfat-utils`
+* 安裝讀寫 ntfs 與 exfat 的軟體：`pacman -S ntfs-3g exfat-utils`
 
 ## 參考連結
 
