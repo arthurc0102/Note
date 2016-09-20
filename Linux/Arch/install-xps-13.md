@@ -244,6 +244,8 @@
 
 * 安裝讀寫 ntfs 與 exfat 的軟體：`pacman -S ntfs-3g exfat-utils`
 
+* 安裝 fat32 格式化軟體：`pacman -S dosfstools`
+
 ## 參考連結
 
 * [Arch Wiki - Dell XPS 13 (2016)](https://goo.gl/hwkjoP)
