@@ -22,8 +22,8 @@
 1. stop mysql: `systemctl stop mysqld`
 2. restart with not ask for password: `mysqld_safe --skip-grant-tables &`
 3. login: `mysql -u root`
-4. reset password: ```
-  use mysql  
+4. reset password:
+  ```use mysql  
   update user SET PASSWORD=PASSWORD("[password]") WHERE USER='root'  
   flush privileges   
   exit
