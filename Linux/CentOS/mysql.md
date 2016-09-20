@@ -24,9 +24,9 @@
 3. login: `mysql -u root`
 4. reset password:
    ```
-   use mysql;
-   update user SET PASSWORD=PASSWORD("password") WHERE USER='root';
-   flush privileges;
-   exit
+   use mysql;  
+   update user SET PASSWORD=PASSWORD("password") WHERE USER='root';  
+   flush privileges;  
+   exit  
    ```
 5. start mysql: systemctl start mysqld
