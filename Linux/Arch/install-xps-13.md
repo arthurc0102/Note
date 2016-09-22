@@ -238,7 +238,7 @@
   touch /home/user/.zshrc
   ```
 
-* 安裝其他軟體：`pacman -S chromium vim rdesktop conky openssh guake firefix-i18n-zh-tw p7zip zip file-roller tree ipython git filezilla markdown`
+* 安裝其他軟體：`pacman -S chromium vim rdesktop conky openssh guake firefix-i18n-zh-tw p7zip zip file-roller tree ipython git filezilla markdown libreoffice-fresh-zh-TW`
 
 * gnome-terminal 如果不能使用：`localectl set-locale LANG="en_US.UTF-8"`
 
