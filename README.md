@@ -9,6 +9,9 @@ Note
 
 > [Markdown](./Markdown) - Markdown 練習筆記
 
-> [School](./School) - 學校或是社團相關
+> [MySQL](./MySQL) - MySQL 筆記
+
+> [Nodejs](./Nodejs) - Nodejs 筆記
 
 > [Windows](./Windows) - Winsdows 設定
+
