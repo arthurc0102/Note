@@ -16,6 +16,8 @@ flush privileges;
 
 
 ### User
+* list: `select host, user, password from mysql.user;`
+
 * add:
   ```
   CREATE USER 'assist'@'localhost';
