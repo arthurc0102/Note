@@ -25,6 +25,7 @@
 ### 檔案內容
 * 檔案：`/etc/sysconfig/network-scripts/ifcfg-[網卡名稱]`
 * 參數意義
+
   ```
   DEVICE=eth0：這個裝置的名稱  
   BOOTPROTO=static：使用我們給的網路名稱 (若為浮動 IP 則為 dhcp)  
