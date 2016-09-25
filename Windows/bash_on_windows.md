@@ -7,6 +7,7 @@
 
 ### Use zsh
 * edit file `~/.bashrc` and add:
+
   ```sh
   if [ -t 1 ]: then
     exec zsh
@@ -17,6 +18,7 @@
 ### Open Linux gui sofeware
 1. install [X server](https://sourceforge.net/projects/xming/)
 2. edit file `~/.bashrc` and add:
+
    ```sh
    export DISPLAY=:0
    ```
