@@ -1,6 +1,6 @@
 # Backup ESXi's VM
 
-> If we don't have vcenter, we can't clone vm without shutdown the vm.  
+> If we don't have vcenter, we can't clone vm without shutdown the vm.
 > This can help us clone vm without shutdown it.
 
 
@@ -42,4 +42,5 @@
 
 
 ### 參考
-<https://github.com/arthurc0102/learn/blob/master/VM_ESXi/ESXi_backup/backup-VM>
+1. <https://github.com/arthurc0102/learn/blob/master/VM_ESXi/ESXi_backup/backup-VM>
+
