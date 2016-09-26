@@ -16,7 +16,11 @@
 
 ### Backup
 
-1. copy [lamw-ghettoVCB-50cfd1c.tar.gz](./lamw-ghettoVCB-50cfd1c.tar.gz) to ESXi server
+1. copy to ESXi server
+   ```
+   scp lamw-ghettoVCB.tar.gz root@<ESXi Server ip>:/vmfs/volumes/<datastore>/
+   ```
+
 2. 解壓縮：
    ```
    tar -xvf lamw-ghettoVCB-50cfd1c.tar.gz
