@@ -10,3 +10,5 @@ sed -r -i -e 's/get_user_pages(_remote)*/get_user_pages_remote/g' vmnet-only/use
 sed -i -e 's/dev->trans_start = jiffies/netif_trans_update\(dev\)/g' vmnet-only/netif.c
 tar cf vmnet.tar vmnet-only
 rm -r vmnet-only
+
+echo "done"
