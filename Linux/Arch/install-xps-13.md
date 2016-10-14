@@ -38,7 +38,7 @@
 
   2. nvme0n1p2
     * szie : all
-    * type : 8E00
+    * type : 8300
 
 
 ### 格式化硬碟
@@ -110,6 +110,8 @@
 * 開機設定
 
   * 因為硬碟的關係 grub 不能用，我們改用 bootctl
+  
+  > [grub install](https://github.com/lambdaTW/learn/blob/master/linux/arch/V3_371)
 
   * 安裝：`bootctl --path=/boot$esp install`
 
