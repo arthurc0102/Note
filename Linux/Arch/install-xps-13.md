@@ -111,7 +111,7 @@
 
   * 因為硬碟的關係 grub 不能用，我們改用 bootctl
   
-    > [grub install](https://github.com/lambdaTW/learn/blob/master/linux/arch/V3_371)
+    > [grub install](https://github.com/lambdaTW/learn/blob/master/linux/arch/V3_371)
 
   * 安裝：`bootctl --path=/boot$esp install`
 
