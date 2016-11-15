@@ -170,8 +170,6 @@
 
       > 依照提示補足缺少的套件
 
-    * 指令：`mkinitcpio`
-
     * 離開 change root 模式：`exit`
 
     * 把掛載到 /mnt 的硬碟解除掛載：`umount -R /mnt`
