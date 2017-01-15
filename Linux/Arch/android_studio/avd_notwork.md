@@ -3,7 +3,6 @@
 ![error_image](./image/error_image.jpg)
 
 ```
-[Forwarded from 拉布 常洺瑋]
 Confirmed. I create a symlink and then I can start the emulator without prepending LD_PRELOAD as stated before.
 
 $ cd $ANDROID_HOME/android-sdk-linux_x86/tools/lib64/libstdc++
