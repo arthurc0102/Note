@@ -2,9 +2,10 @@
 
 > 建立 svn 專案
 
-1. 在 `/var/www/svn` 下指令
+1. 下指令
   ```sh
-  svnadmin create <專案名>
+  cd /var/www/svn
+  svnadmin create <專案名>
   chown -R apache:apache <專案名>/
   chcon -R -t httpd_sys_content_t <專案名>/
   chcon -R -t httpd_sys_rw_content_t <專案名>/
@@ -23,8 +24,8 @@
   ```
   <Location /<專案名>
         DAV svn
-        SVNPath /var/www/svn/<專案名>
-        AuthType Basic
+        SVNPath /var/www/svn/<專案名>/
+        AuthType Basic
         AuthName "Subversion repos"
         AuthUserFile /etc/svn-auth-conf		#帳號密碼
         AuthzSVNAccessFile /var/www/svn/<專案名>/conf/authz
