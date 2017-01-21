@@ -1,7 +1,7 @@
 # 放大 LV 容量
 
-> new disk = sdb
-> vgname = centos
+> new disk = sdb  
+> vgname = centos  
 > lvname = root
 
 ```
