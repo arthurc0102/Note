@@ -27,7 +27,7 @@
           SVNPath /var/www/svn/<專案名>/
           AuthType Basic
           AuthName "Subversion repos"
-          AuthUserFile /etc/svn-auth-conf  # 帳號密碼
+          AuthUserFile /etc/svn-auth-conf
           AuthzSVNAccessFile /var/www/svn/<專案名>/conf/authz
           Require valid-user
   </Location>
