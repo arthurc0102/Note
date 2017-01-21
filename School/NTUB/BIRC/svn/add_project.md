@@ -1,17 +1,15 @@
 # add svn project
 
-* 建立 svn 專案
+> 建立 svn 專案
 
-1. ```sh
-  cd /var/www/svn
+1. 在 `/var/www/svn` 下指令```sh
   svnadmin create <專案名>
   chown -R apache:apache <專案名>/
   chcon -R -t httpd_sys_content_t <專案名>/
   chcon -R -t httpd_sys_rw_content_t <專案名>/
   ```
 
-2. 在 `/var/ww/svn/<專案名>/conf/authz` 檔案中加入
-  ```
+2. 在 `/var/ww/svn/<專案名>/conf/authz` 檔案中加入```
   # add auth dir
   [/]
   # add auth user
@@ -19,8 +17,7 @@
   * =  # 其他人都不能看
   ```
 
-3. 在 `/etc/httpd/conf.d/subversion.conf` 檔案中加入
-  ```sh
+3. 在 `/etc/httpd/conf.d/subversion.conf` 檔案中加入```
   <Location /<專案名>
         DAV svn
         SVNPath /var/www/svn/<專案名>
@@ -32,7 +29,6 @@
   </Location>
   ```
 
-4. 重新啟動服務
-  ```sh
-  systemctl restrat httpd
+4. 重新啟動服務```sh
+  systemctl restrat httpd
   ```
