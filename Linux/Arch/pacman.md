@@ -1,6 +1,6 @@
 # pacman
 
-* -S <package name> --> install
+* -S `package name` --> install
 
 * -Syu --> update and install
 
@@ -8,6 +8,6 @@
 
 * -Q --> list all package that install
 
-* -Qi <package name> --> show the package's info
+* -Qi `package name` --> show the package's info
 
-* -Rs <package name> --> remove
+* -Rs `package name` --> remove
