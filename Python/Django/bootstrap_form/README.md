@@ -1,3 +1,6 @@
+# Bootstrap form
+
+``` python
 from django.forms import ModelForm, Textarea
 from candidate.models import Candidate
 
@@ -14,3 +17,5 @@ class CandidateForm(BootstrapModelForm):
         model = Candidate
         fields = ['name', 'party', 'age', 'politics']
         widgets = {'politics': Textarea(attrs={'style': 'resize: vertical;'})}
+
+```
