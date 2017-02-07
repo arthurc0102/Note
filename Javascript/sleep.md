@@ -12,6 +12,6 @@ function sleep(milliseconds) {
 
 console.log(new Date());
 console.log('Dude!');
-sleep(1000);
+sleep(1000); // 1 秒 (1000 milliseconds)
 console.log(new Date());
 ```
