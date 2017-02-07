@@ -1,17 +1,7 @@
 # Javascript sleep
 
 ```javascript
-function sleep(milliseconds) {
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
-    }
-  }
-}
-
-console.log(new Date());
-console.log('Dude!');
-sleep(1000); // 1 秒 (1000 milliseconds)
-console.log(new Date());
+setTimeout(function(){
+  alert("hi")
+}, 10000); // 10 秒後跳出視窗
 ```
