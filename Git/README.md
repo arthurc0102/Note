@@ -133,3 +133,24 @@
     print('Hello')
     ```
   * 切換到某版本看看：`git checkout <版本號>`
+    * 指令 `git lg` 列出所有的版本
+    * 選擇想要看的版本號然後下 `git checkout <版本號>`，在打開檔案就會看到那時候的檔案樣子了
+    * 要回到最新的狀態就下 `git checkout master`  
+      P.S. 不要在這時候更動檔案，如果要更動記得建立分支
+
+  * 建立新的分支 `git checkout -b <分支名稱>`
+
+  * 切換到現有分支 `git checkout <分支名稱>`
+
+---
+# 待完成
+
+* git merge
+
+* git push
+
+* git pull
+
+* git diff
+
+* git show
