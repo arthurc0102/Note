@@ -7,7 +7,9 @@
 3. 設定使用者帳號密碼檔 `/etc/dovecot/users` 新增使用者，格式 `<user>@<domain>:<指令產生的東西>::::`  
    PS: 最後的四個 ":" 記得要加
 
-4. 重啟服務：
+4. 更新並重啟服務：
+
+   * postmap /etc/postfix/vmailbox
 
    * systemctl restart postfix
    
