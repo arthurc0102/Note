@@ -8,6 +8,9 @@
 
 * Change OS's sid
   1. <http://windowstechpro.com/how-to-change-sid-in-server-2012-for-cloned-image/>
-  
+
 * Add to AD Domain
   1. <https://technet.microsoft.com/zh-tw/library/dd807102(v=ws.11).aspx>
+
+* 部署漫遊使用者設定檔
+  1. <https://msdn.microsoft.com/zh-tw/library/jj649079(v=ws.11).aspx>
