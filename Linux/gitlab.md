@@ -12,3 +12,7 @@
 ## 備份
 
 1. <https://gitlab.com/gitlab-org/gitlab-ce/blob/master/doc/raketasks/backup_restore.md>
+
+## 郵件
+
+1. <https://docs.gitlab.com/omnibus/settings/smtp.html#gmail>
