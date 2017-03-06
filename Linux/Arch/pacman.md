@@ -11,3 +11,8 @@
 * -Qi `package name` --> show the package's info
 
 * -Rs `package name` --> remove
+
+
+## others
+
+* update key: `pacman -Sy archlinux-keyring`
