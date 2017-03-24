@@ -14,3 +14,7 @@
    * systemctl restart postfix
    
    * systemctl restart dovecot
+
+## 特別注意
+
+* 帳號設定登入時伺服器會自動轉成小寫所以設定檔均需為小寫
