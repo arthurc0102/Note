@@ -16,3 +16,8 @@
 ## 郵件
 
 1. <https://docs.gitlab.com/omnibus/settings/smtp.html#gmail>
+
+
+## 更新
+
+1. <https://about.gitlab.com/upgrade-to-package-repository/>
