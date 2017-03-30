@@ -154,3 +154,5 @@
 * git diff
 
 * git show
+
+* git blame
