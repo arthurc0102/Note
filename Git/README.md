@@ -142,17 +142,23 @@
 
   * 切換到現有分支 `git checkout <分支名稱>`
 
----
-# 待完成
+* `git merge` 分支合併
+  * `git merge <分支名稱>`：將 `<分支名稱>` 合併到現在的分支
 
-* git merge
+* `git push`
+  * 將更新的東西推到遠端
 
-* git push
+* `git fetch`
+  * 將遠端的更新拉到本地端
 
-* git pull
+* `git pull`
+  * 將遠端的更新拉到本地端，並合並 (git fetch + git merge)
 
-* git diff
+* `git diff <filename>`
+  * 顯示目前工作區的檔案（尚未 commit ）與最後一次的 commit 有什麼差異
 
-* git show
+* `git show <filename>`
+  * 顯示最後一次 commit 與倒數第二次的 commit 有什麼差異
 
-* git blame
+* `git blame <filename>`
+  * 顯示某一行是誰修改的
