@@ -244,6 +244,8 @@ def hello_world():
 
 語法：`在特殊符號前插入「\」即可`
 
+# break page: `<div style="page-break-after: always;"></div>`
+
 
 # 參考資料
 
