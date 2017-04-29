@@ -1,0 +1,31 @@
+<form action="" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+
+  {% if form.non_field_errors %}
+    <div class="alert alert-danger fade in" style="margin-top: 10px;">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      {% for error in  form.non_field_errors %}
+        <strong>{{ error }}</strong>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% for field in form %}
+    <p>
+      {{ field.label_tag }}
+      {{ field }}
+      {% if field.errors %}
+        <div class="alert alert-danger fade in" style="margin-top: 10px;">
+          <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+          {% for error in field.errors %}
+            <p>{{ error }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </p>
+  {% endfor %}
+
+  <p>
+    <input class="btn btn-primary pull-right" type="submit" value="送出">
+  </p>
+</form>

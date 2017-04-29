@@ -1,0 +1,9 @@
+{% extends "base.djhtml" %}
+
+{% block body %}
+  <h1>
+    Hello
+  </h1>
+  <h1>Image Upload</h1>
+  {% include "form.djhtml" %}
+{% endblock %}

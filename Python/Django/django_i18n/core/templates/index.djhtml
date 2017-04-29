@@ -1,0 +1,44 @@
+{# you should load i18n in all you will translate template though the template's parent had loaded #}
+{% load i18n %}
+
+<p>1: {{ appname }} will be translate</p>
+
+
+{# is equal，in .po is msgid "appname" #}
+<p>2: {% trans appname %} will be translate</p>
+<p>3: {% trans "name" %} will be translate</p>
+
+{# it will show like below in .po: #}
+{# msgctxt "descript text" #}
+{# msgid "User" #}
+<p>4: {% trans 'User' context 'descript text' %} will be translate</p>
+
+<p>5: {{ another }} will not be traslate</p>
+
+
+<p>6: {% blocktrans %}{{ default }} this line will be translate, include default value{% endblocktrans %}</p>
+
+<p>7: {% blocktrans %}{{ another }} this line will be translate without another value{% endblocktrans %}</p>
+
+<p>
+8: {% blocktrans with book_t=book|title author_t=author|title %}
+  This is {{ book_t }} by {{ author_t }}, this line will be translate.
+  {% endblocktrans %}
+</p>
+
+<p>
+9: {% blocktrans %}
+  This is {{ book|title }} by {{ author|title }}, this line is wrong you will use 8 setting
+  {% endblocktrans %}
+</p>
+
+<p>10: {% blocktrans %}
+  That will cost $ {{ amount }}. This line is wrong you will use 11 setting
+  {% endblocktrans %}
+</p>
+
+<p>
+11: {% blocktrans with amount=article.price %}
+  That will cost $ {{ amount }}.
+  {% endblocktrans %}
+</p>
