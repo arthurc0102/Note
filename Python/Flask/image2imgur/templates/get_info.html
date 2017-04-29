@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %} Get info {% endblock %}
+
+{% block content %}
+<form action="/info" method="get">
+  <label for="link">Your image link: </label>
+  <input type="text" name="link">
+  <br><br>
+  <input type="submit" value="Send">
+</form>
+{% endblock %}
