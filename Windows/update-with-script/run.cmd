@@ -26,4 +26,4 @@ start /wait .\%%i /quiet /norestart > nul
 set /a "CURRENT+=1"
 CLS
 )
-EXIT
+PAUSE
