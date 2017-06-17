@@ -14,6 +14,8 @@ target_dir = os.path.join(working_dir, 'target')
 
 
 def image_resize(image, filename):
+    global target_dir
+
     width, height = image.size
     if width > height:
         height, width = int((512 / width) * height), 512
@@ -21,6 +23,8 @@ def image_resize(image, filename):
         width, height = int((512 / height) * width), 512
 
     image.resize((width, height), Image.BILINEAR)
+    new_image = image.resize((width, height), Image.BILINEAR)
+    new_image.save(os.path.join(target_dir, filename))
 
 
 def main():
