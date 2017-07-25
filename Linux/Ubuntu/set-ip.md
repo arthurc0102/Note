@@ -11,4 +11,4 @@
      broadcast 192.168.1.255
      gateway 192.168.1.1
    ```
-3. ifdown <interface> && ifup <interface>
+3. `ifdown <interface> && ifup <interface>`
