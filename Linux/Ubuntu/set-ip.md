@@ -11,4 +11,4 @@
      broadcast 192.168.1.255
      gateway 192.168.1.1
    ```
-3. systemctl restart network
+3. ifdown <interface> && ifup <interface>
