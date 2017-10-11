@@ -1,4 +1,4 @@
-# Change dir under home from english to chinese
+# Change dir under home from chinese to english
 
 ```sh
 LANG=C xdg-user-dirs-update --force
