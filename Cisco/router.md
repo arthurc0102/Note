@@ -29,7 +29,7 @@
   * 設定今日訊息 → banner motd [結束符號]
   * 設定名稱 → hostname [名稱]
   * 設定路由表 → ip route [想要去的網段] [想要去的網段遮罩] [下一個跳轉點（可為另一 router IP 或是自己介面編號）]
-  * 進入子介面組態設定 → interface FastEthernet [數字]
+  * 進入子介面組態設定 → interface FastEthernet [數字].[數字]
 
 * 介面組態模式設定：Router(config-if)#
   * 開機 → no shutdown
