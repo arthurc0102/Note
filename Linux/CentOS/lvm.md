@@ -21,7 +21,7 @@
 7. `xfs_growfs /dev/<vgname>/<lvname>` to expand an XFS filesystem
 8. `df -h` to show disk free size
 
-### Example to extend LVM size
+#### Example to extend LVM size
 
 ```shell
 # disk name: /dev/sdb
