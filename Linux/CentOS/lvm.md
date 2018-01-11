@@ -25,7 +25,7 @@ df -h
 ```
 
 1. create part partition: `fdisk /dev/<disk name>`
-- input `n` to create new partition
+  - input `n` to create new partition
   2. input `p` to create primary partition
   3. input `t` and select to partition number
   4. input `8e` to make partition type Linux LVM
