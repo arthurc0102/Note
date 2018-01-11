@@ -25,11 +25,11 @@ df -h
 ```
 
 1. create part partition: `fdisk /dev/<disk name>`
-  1. input `n` to create new partition
-  2. input `p` to create primary partition
-  3. input `t` and select to partition number
-  4. input `8e` to make partition type Linux LVM
-  5. input `w` to save your setting
+   1. input `n` to create new partition
+   2. input `p` to create primary partition
+   3. input `t` and select to partition number
+   4. input `8e` to make partition type Linux LVM
+   5. input `w` to save your setting
 2. `partprobe` to avoid reboot after fdisk
 3. `fdisk -l` to list all partition
 4. `pvcreate /dev/<partition name>` to initialize a disk or partition for use by LVM 
