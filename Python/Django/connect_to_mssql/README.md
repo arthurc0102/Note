@@ -1,5 +1,7 @@
 # Use Django and SQL Server
 
+## Install and Run
+
 1. Install [django-pyodbc-azure](https://github.com/michiya/django-pyodbc-azure): `pip install django-pyodbc-azure`
 
 2. Install ODBC Driver
@@ -22,3 +24,7 @@
         }
     }
     ```
+
+## Ref
+
+- <https://dotblogs.com.tw/andrewblog/2017/09/18/192555>
