@@ -10,15 +10,15 @@
         - `brew install msodbcsql mssql-tools`
 
 3. Database setting in Django project
-```python
-DATABASES = {
-    'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'DjangoTest',
-        'USER': 'sa',
-        'PASSWORD': 'password',
-        'HOST': '127.0.0.1',
-        'PORT': '1433',
+    ```python
+    DATABASES = {
+        'default': {
+            'ENGINE': 'sql_server.pyodbc',
+            'NAME': 'DjangoTest',
+            'USER': 'sa',
+            'PASSWORD': 'password',
+            'HOST': '127.0.0.1',
+            'PORT': '1433',
+        }
     }
-}
-```
+    ```
