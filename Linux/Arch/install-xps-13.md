@@ -110,7 +110,8 @@
 * 開機設定
 
   * 因為硬碟的關係 grub 不能用，我們改用 bootctl
-  
+    如果要用 grub 設定如下
+    > $pacman -S grub-efi-x86_64 efibootmgr
     > Grub Install: `grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck --debug`
     > 不確定是否適用於 nvme 
 
