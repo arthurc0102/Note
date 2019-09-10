@@ -111,7 +111,8 @@
 
   * 因為硬碟的關係 grub 不能用，我們改用 bootctl
   
-    > [grub install](https://github.com/lambdaTW/learn/blob/master/linux/arch/V3_371)
+    > Grub Install: `grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=arch_grub --recheck --debug`
+    > 不確定是否適用於 nvme 
 
   * 安裝：`bootctl --path=/boot$esp install`
 
